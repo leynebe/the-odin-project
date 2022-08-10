@@ -1,0 +1,36 @@
+* {
+    background-color: rgb(140, 206, 123);
+    color:rgb(77, 56, 4);
+}
+
+a {
+    color:rgb(21, 43, 114);
+}
+
+p {
+    color:rgb(141, 103, 8);
+}
+
+li {
+    color:rgb(71, 90, 56);
+}
+
+li span {
+    font-weight: bolder;
+    font-size: large;
+}
+
+span.class1 {
+    font-family: Helvetica, sans-serif;
+}
+.class2 {
+    font-family: sans-serif;
+}
+.class3 {
+    font-family: Times, sans-serif;
+}
+
+#potato_salad_image {
+    height: auto;
+    width: 400px;
+}
