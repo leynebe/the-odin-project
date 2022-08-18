@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+}
+
+img {
+  width: 600px;
+}
+
+button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+}
+
+input {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 8px 24px;
+  width: 400px;
+  margin-bottom: 16px;
+}
+
+
+
+/* Own changes */
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color:rgb(61, 61, 61);
+}
+ul{
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+.header .right-links, .header .left-links {
+  display: flex;
+  flex-direction: row;
+  gap:16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 5px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(209, 209, 209);
+  padding: 10px;
+}
+.footer .right-links, .footer .left-links {
+  display: flex;
+  flex-direction: row;
+  gap:16px;
+}
+
+
+/* SOLUTION */
+/* body {  // I put the entire body object in a div, instead of just using the body. This caused the entire page to be height limited (because of the div). Better to just use the body.
+  display: flex;
+  flex-direction: column;
+}
+button {
+  padding: 8px 16px;
+}
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.footer {
+  background: #eee;
+}
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px
+} */
