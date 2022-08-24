@@ -1,0 +1,177 @@
+/* All changes from: */ 
+/* https://cdn.statically.io/gh/TheOdinProject/curriculum/main/foundations/html_css/project/colors_and_stuff.png */
+.header, .content1, .footer {
+    background-color: #1F2937;
+}
+.header .logo {
+    color: #F9FAF8;
+    font-size: 24px;
+}
+.content1 .title {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: bolder;
+}
+.content1 .title-text, .header .links {
+    color: #E5E7EB;
+    font-size: 16px;
+}
+.content2 .title {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+.content3 {
+    background-color: #E5E7EB;
+}
+.content3 .quote-text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+.content4 .action-box, button {
+    background-color: #3882F6;
+}
+.content4, .footer, button, a {
+    color: #FFF;
+}
+
+/* Own changes */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+}
+button {
+    width: 96px;
+    height: 32px;
+    padding: 4px 16px;
+    border-radius: 8px;
+    border: 1px solid #FFF;
+    flex-shrink: 0;
+}
+button:active {
+    transform: translateY(1px);
+}
+button:hover {
+    background-color: #5793f5;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 0px;
+}
+.header .links {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.content {
+    padding: 48px 0px;
+}
+.content1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 48px;
+}
+.content1 .left-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 8px;
+}
+.content1 img {
+    display: flex;
+    max-height: 300px;
+    object-fit: cover;
+}
+.content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content2 .illustration {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    gap: 8px
+}
+.content2 .illustrations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 24px;
+}
+.content2 .illustrations img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #3882F6;
+}
+.content2 .illustrations .illustration2 img, .content2 .illustrations .illustration3 img {
+    /* Hardcoded fix for specific images to crop the birds around a better center. */
+    object-position: 80% 0;
+}
+.content3 {
+    /* center main div */
+    display: flex;
+    justify-content: center;
+}
+.content3 .quote-box {
+    /* allow column direction */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 900px;
+    padding: 24px;
+}
+.content3 .quote-box .author {
+    /* align right */
+    font-weight: bold;
+    text-align: right;
+}
+.content4 {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 48px 0px;
+}
+.content4 .action-box {
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    border-radius: 8px;
+    gap: 24px;
+    padding: 24px 48px;
+    align-items: center;
+}
+.content4 .action-box .left-text {
+    display: flex;
+    flex-direction: column;
+}
+.content4 .action-box .left-text .action-title {
+    font-weight: bold;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0px;
+}
